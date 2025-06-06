@@ -1,9 +1,12 @@
 // Task016_1.java
-Enums    – understand the code 
+//Enums    – understand the code
 
+
+import java.util.HashMap;
+import java.util.Map;
 
 //Attaching Multiple values
-public enum Element {
+ enum Element {
     H("Hydrogen", 1, 1.008f),
     HE("Helium", 2, 4.0026f),
     // ...
@@ -42,4 +45,13 @@ public enum Element {
     public static Element valueOfAtomicWeight(float weight) {
         return BY_ATOMIC_WEIGHT.get(weight);
     }
+}
+
+public class task16_01{
+     public static void main(String[] args){
+         Element hydrogen = Element.H;
+         System.out.println(hydrogen.label);
+         System.out.println(hydrogen.atomicNumber);
+         System.out.println(hydrogen.atomicWeight);
+     }
 }
