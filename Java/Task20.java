@@ -1,3 +1,4 @@
+package Java;
 public class Task20 {
     public static void main(String[] args){
         char[] name={'H','e','m','a','n','t'};
@@ -10,6 +11,7 @@ public class Task20 {
         for (char c : name) {
             System.out.println(c);
         }
+        SuperClass s1= new SuperClass();
 
     }
 }
