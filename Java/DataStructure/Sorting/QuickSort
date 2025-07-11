@@ -1,0 +1,31 @@
+Quick sort is again divide and conquer mechanism based sorting algorithm.
+In this, we select 1 element as pivot meaning first element, last element or middle element can be pivot,
+array will be divided to left and right sort keeping pivot as fix
+Function will call recursively
+
+Algo
+---------
+Select Pivot
+Elements < Pivot go to Left
+Elements > Pivot go to Right
+Place the pivot in its correct position.
+Recursively apply the same steps to the left and right sub-arrays.
+The array is sorted when all recursive calls are complete.
+
+Pseudocode
+-------------
+function quickSort(array, low, high)
+    if low < high then
+        pivotIndex = partition(array, low, high)
+        quickSort(array, low, pivotIndex - 1)
+        quickSort(array, pivotIndex + 1, high)
+
+function partition(array, low, high)
+    pivot = array[high]
+    i = low - 1
+    for j from low to high - 1 do
+        if array[j] < pivot then
+            i = i + 1
+            swap array[i] with array[j]
+    swap array[i + 1] with array[high]
+    return i + 1
