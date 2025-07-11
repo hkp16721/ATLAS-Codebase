@@ -1,0 +1,46 @@
+Bubble Sort
+-----------------
+1. Array of length n as input
+2. Check if n is already sorted
+3. If yes - END
+4. If No -
+   1. Loop through the array from first till last element - for i=0 till i=n-1
+   2. for each index of outer loop, inner loop will check adjacent element and swap in sorted order
+   3. Continue till array is sorted and no swap required
+   4. END
+
+Pseudo Code
+-------------------
+function bubblesort(Array x){
+    int length = x.length;
+
+        if isSorted(x) {
+            return x;
+        }
+
+        for i = 0 to length - 1 {
+            boolean swapped = false;
+
+            for j = 0 to length - i - 2 {
+                if x[j] > x[j + 1 {
+                    swap(x[j], x[j + 1]);
+                    swapped = true;
+                }
+            }
+
+            if not swapped {
+                break;
+            }
+        }
+
+        return x;
+}
+
+function isSorted(Array x) {
+    for i = 0 to x.length - 2 {
+        if x[i] > x[i + 1] {
+            return false;
+        }
+    }
+    return true;
+}
