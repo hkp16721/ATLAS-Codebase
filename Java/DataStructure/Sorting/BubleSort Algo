@@ -44,3 +44,9 @@ function isSorted(Array x) {
     }
     return true;
 }
+
+
+Advantages of Bubble sort:
+1. Simple algo and can work well for smaller data
+2. Extra memory space not required as it is doing inplace sorting
+3. In case of sorted array, it can work faster o(n)
