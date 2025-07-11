@@ -1,0 +1,24 @@
+Merge sort is a sorting algorithm which use divide and Conquer methodology to sort the element.
+
+Algo
+-----------
+1. Array of element
+2. Check size of element ->if 0 or 1 -> already sorted
+3. Size > 1 ->
+   1. middle index - min+max/2
+   2. temp arrayLeft = mergeSort(array, min, middle) // recursive calling to sort 0 till middle items
+   3. temp arrayRight = mergeSort(array, middle+1, max) // recursive calling to sort the middle+1 till last index
+   4. Once completed merge arrayLeft and arrayRight to generate final sorted list
+
+Pseudo Code
+--------------
+
+function mergeSort(array):
+    if length(array) <= 1:
+        return array
+
+    mid = length(array) / 2
+    leftHalf = mergeSort(array[0:mid])
+    rightHalf = mergeSort(array[mid+1:length(array)])
+
+    return merge(leftHalf, rightHalf)
