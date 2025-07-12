@@ -1,0 +1,24 @@
+AVL tree is a self-balancing Binary Search Tree (BST) where the difference between heights of left and right subtrees for any node cannot be more than one.
+
+Algo- avl insertion
+---------------------
+Insert(value)
+1. Check for value type and if tree is null or not.
+2. If the tree is empty (no root):
+      Create a new node with the value and set it as the root.
+3. Otherwise:
+      Call InsertNode with the root and the value.
+4. End Insert.
+
+InsertNode(current, value)
+1. If the value is less than current's value:
+2. If current's left child is empty:
+3. Create a new node with the value and set it as the left child.
+4. Otherwise:
+5. Call InsertNode with current's left child and the value.
+6. If the value is greater than or equal to current's value:
+7. If current's right child is empty:
+8. Create a new node with the value and set it as the right child.
+9. Otherwise:
+10. Call InsertNode with current's right child and the value.
+11. After placing the value, check if the tree is balanced.

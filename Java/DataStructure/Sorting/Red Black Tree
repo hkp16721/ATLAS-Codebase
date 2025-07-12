@@ -1,0 +1,34 @@
+A Red-Black Tree is a balanced binary search tree with an additional property that ensures the tree remains approximately balanced during insertions and deletions.
+Here nodes will be assumed as color coded, where root will always be black
+All leaves (nodes with null value) will be black
+No two red nodes can be adjacent
+Every path from a node to its descendant NIL nodes must have the same number of black nodes.
+
+Algo
+-----------
+Left Rotation
+----------
+y = x.right
+x.right = y.left
+y.left.parent = x (if y.left exists)
+y.parent = x.parent
+Update parent's child reference to y
+y.left = x
+x.parent = y
+
+Right Rotation
+---------------
+y = x.left
+x.left = y.right
+y.right.parent = x (if y.right exists)
+y.parent = x.parent
+Update parent's child reference to y
+y.right = x
+x.parent = y
+
+Color Properties Enforcement:
+
+No two consecutive RED nodes on any path
+All paths maintain same black height
+Root is always BLACK
+Leaves (TNULL) are BLACK
