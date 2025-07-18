@@ -48,6 +48,21 @@ class tree {
             inOrderRecursive(current.right);
         }
     }
+    public void search(int val){
+        tree_node result = search_val(val);
+        System.out.println("Node : "+result+" -> value: -> " + result.value);
+
+    }
+    private tree_node search_val(int val){
+        tree_node current = root;
+        while(current!=null){
+            if(val == current.value) return current;
+            else if(current.value>val){
+                current = current.left;
+            }else current = current.right;
+        }
+        return null;
+    }
 }
 
 public class Tree_01 {
@@ -64,5 +79,7 @@ public class Tree_01 {
 //        bst.insert(12);
 
         bst.inOrderTraversal();
+        bst.search(400);
+
     }
 }

@@ -1,0 +1,45 @@
+Radix sort is sorting technique which does not use comparing of element, instead it
+follow digit wise sorting. It groups number based on digits.
+
+Algo
+---------
+1. Check if all the input elements have the same number of digits; if not, find the maximum number of digits in the list and add leading zeroes to the numbers that have fewer digits to match the maximum digit count.
+2. Take the least significant digit (units digit) of each element.
+3. Sort these digits using counting sort logic; create an array to count occurrences of each digit (0-9) and rearrange the elements in the output array according to the counted digits.
+4. Repeat step 2 for the next least significant digit until all digits in the given elements are sorted.
+5. The final list of elements achieved after the last iteration is the sorted output.
+
+pseudo Code
+--------------
+function radixSort(array)
+    if array is empty
+        return array
+
+    max = find maximum in array
+
+    exp = 1
+    while max/exp > 0
+        countingSort(array, exp)
+        exp = exp * 10
+
+    return array
+
+function countingSort(array, exp)
+    n = length of array
+    create output array of size n
+    create count array of size 10 initialized to 0
+
+    for i from 0 to n-1
+        digit = (array[i]/exp) % 10
+        count[digit]++
+
+    for i from 1 to 9
+        count[i] = count[i] + count[i-1]
+
+    for i from n-1 downto 0
+        digit = (array[i]/exp) % 10
+        output[count[digit]-1] = array[i]
+        count[digit]--
+
+    for i from 0 to n-1
+        array[i] = output[i]
