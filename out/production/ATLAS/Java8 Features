@@ -1,0 +1,23 @@
+Below are the features of Java8
+
+1. Lambda function support :
+    (parameters) -> expression;
+    (a,b) -> a+b;
+
+2. Functional Interfaces :
+    interface with exactly one abstract method
+
+3. default methods in Interface
+
+4. Static methods in Interfaces
+
+5. Stream API
+   way to process collection
+
+6. Date and time API
+
+7. Collectors
+toList()
+toSet()
+joining()
+groupingBy()

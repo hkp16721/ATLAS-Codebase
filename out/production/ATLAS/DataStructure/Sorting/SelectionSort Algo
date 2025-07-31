@@ -1,0 +1,30 @@
+Selection Sort Algorithm
+--------------------------------
+Description: Selection sort is a simple comparison-based sorting algorithm.
+It divides the input list into two parts: a sorted part and an unsorted part.
+The algorithm repeatedly selects the smallest (or largest, depending on the order) element from the unsorted part and moves it to the end of the sorted part.
+
+Algorithm
+-----------
+1. Initialize: Define the array to be sorted.
+2. Set: Let ( n ) be the length of the array.
+3. Outer Loop: For ( i ) from 0 to ( n - 2 ):
+   1. Assume Minimum: Set ( text{minIndex} = i ).
+   2. Inner Loop: For ( j ) from ( i + 1 ) to ( n - 1 ):
+      Compare: If ( text{array}[j] < text{array}[text{minIndex}] ):- Update (text{minIndex} = j).
+   3. Check for Swap: If (text{minIndex} == i ):
+      Swap: Swap (text{array}[i] ) with (text{array}[text{minIndex}]).
+4. End Loop: Repeat the outer loop until the entire array is sorted.
+5. Output: The array is now sorted.
+6. End: Finish the selection sort algorithm.
+
+Pseudo code:
+----------------
+function selectionSort(array):
+    n = length(array)
+    for i from 0 to n-1:
+        minIndex = i
+        for j from i+1 to n:
+            if array[j] < array[minIndex]:
+                minIndex = j
+        swap array[i] with array[minIndex]
