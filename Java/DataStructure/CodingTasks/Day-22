@@ -1,0 +1,35 @@
+Task 1: What do you mean by GOOD Code and BAD CODE?
+-----------------------------------------------------------
+Good code is efficient, simple, easy to read, understand, and modify. It follows clear standards, is well-structured, properly documented (with comments, especially where code is not self-explanatory), and is robust against errors. Good code is also maintainable and consistent, making it easier for others to onboard and improve it. It is atomic in operation, efficient, and can be easily extended or debugged.
+
+Bad code lacks these qualities. It is confusing, hard to read or modify, inconsistently styled, poorly documented, and often produced without clear standards. This kind of code makes maintenance, collaboration, and bug-fixing difficult, and may result in unreliable or inefficient software. Standards and clear principles are essential to consistently produce good code.
+
+
+
+Task 2: What do you understand by databinding?
+------------------------------------------------------------
+Databinding is a technique commonly used in modern software development (especially in frameworks like Angular, React, or WPF) to automatically synchronize data between the model (data source) and the user interface (UI). When the data changes in the model, the UI updates automatically, and vice versa (in the case of two-way databinding). This reduces boilerplate code and keeps the UI in sync with application state, improving efficiency and reliability.
+
+
+
+Task 3: What do you know about continuous development?
+------------------------------------------------------------
+Continuous development refers to a set of software engineering practices where code is constantly being written, tested, integrated, and deployed. It includes continuous integration (CI)—merging code frequently and running automated tests to catch issues early—and continuous delivery/deployment (CD)—automatically deploying every change to a staging or production environment after passing all tests. This approach aims for rapid, reliable, and incremental releases, improves software quality, and reduces time-to-market.
+
+
+
+Task 4: What are the conditions for polymorphism?
+-------------------------------------------------------------
+Polymorphism allows objects/methods to behave differently based on context, mainly through method overloading and overriding.
+
+For static (compile-time) polymorphism (method overloading):
+
+Must have methods with the same name in the same class but with different parameter types, number, or sequence.
+
+For dynamic (runtime) polymorphism (method overriding):
+
+A method in a subclass must have the same name, return type, and parameters as in the superclass.
+
+At a minimum, there must be at least two methods with the same name (for overloading: in same/different classes, with different signatures; for overriding: in superclass and subclass with identical signatures).
+
+The compiler or runtime uses these differences to determine which method to execute.
