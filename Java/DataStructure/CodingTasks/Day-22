@@ -33,3 +33,50 @@ A method in a subclass must have the same name, return type, and parameters as i
 At a minimum, there must be at least two methods with the same name (for overloading: in same/different classes, with different signatures; for overriding: in superclass and subclass with identical signatures).
 
 The compiler or runtime uses these differences to determine which method to execute.
+
+
+Task 05: What is TDD and BDD? Why are they used? Where are they used?
+------------------------------------------------------------------------
+Test-Driven Development (TDD):
+
+What is it?
+TDD is a software development process where developers write automated unit tests before writing functional code. The process typically follows the "Red-Green-Refactor" cycle: write a failing test, write the minimum code to pass the test, then refactor the code for quality.
+
+Why is it used?
+TDD is used to ensure every piece of new functionality is specified and tested continuously, leading to fewer bugs, cleaner design, and greater confidence in code changes.
+
+Where is it used?
+TDD is primarily used at the unit test level throughout development projects, especially in Agile environments, across back-end, API, and component development by developers.
+
+Behavior-Driven Development (BDD):
+
+What is it?
+BDD is an extension of TDD that emphasizes system behavior as seen from the user's or business's perspective. It involves writing test scenarios in plain language (often Gherkin syntax like "Given-When-Then") that describe expected behaviors, involving non-technical stakeholders as well.
+
+Why is it used?
+BDD is used to create shared understanding between business and technical teams, improving communication, ensuring software meets business needs, and providing living documentation. It helps catch requirement misunderstandings early.
+
+Where is it used?
+BDD is well-suited to system, acceptance, and integration testing, UI/UX-driven projects, and collaborative software projects involving developers, testers, and business stakeholders
+
+
+
+Task 06: List down Manual and Automated Testing Tools
+-----------------------------------------------------------
+Manual Testing Tools (Most Used):
+
+BrowserStack: For manual cross-browser, real-device, and mobile app testing; cloud-based and very user-friendly.
+
+TestRail: For test case management, organizing, and tracking manual test execution.
+
+JIRA: Primarily for defect/issue tracking but heavily used in manual QA workflows to log and manage bugs.
+
+Automated Testing Tools (Most Used):
+
+Selenium: The industry standard for web application automation, open-source, and supports multiple programming languages.
+
+Appium: The leading automation tool for mobile app testing (iOS and Android).
+
+Cypress: A modern choice for fast, reliable end-to-end web testing, especially with JavaScript frameworks.
+
+JUnit/pytest: Most popular frameworks for unit testing in Java and Python, respectively
